@@ -103,7 +103,7 @@ namespace InterviewWork.Controllers
                 var _profile = _profileDAL.getProfileByID(id);
                 if (_profile == null)
                 {
-                    TempData["InfoMessage"] = "Product Not Available";
+                    TempData["InfoMessage"] = "Profile Not found";
                     return RedirectToAction("Index");
                 }
                 return View(_profile);
